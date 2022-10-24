@@ -6,17 +6,17 @@
     --gray-blue: hsl(220, 15%, 55%);
     --dark-blue: hsl(218, 44%, 22%);
 
-    --mobile-width: 375px;
-    --desktop-width: 1440px;
+    --mobile-width: 23.4375rem;
+    --desktop-width: 90rem;
 
-    --font-size: 15px;
+    --font-size: .9375rem;
 }
 
 
 
 html {
     box-sizing: border-box;
-    height: 100vh;
+    
 }
 
 *,
@@ -28,28 +28,25 @@ html {
 /* Global */
 body {
     margin: 0;
-    height: 100%;
     font-family: 'Outfit', sans-serif;
     background-color: var(--light-gray);
     font-size: var(--font-size);
-    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 img {
     width: 100%;
 }
 
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /* Card */
 
 .card {
-    width: var(--mobile-width);
+    max-width: var(--mobile-width);
     background-color: var(--white);
     padding: var(--font-size);
     border-radius: var(--font-size);
@@ -60,27 +57,27 @@ img {
 }
 
 .card--body {
-    padding: 0 10px 10px 10px;
+    padding: 0 .625rem .625rem .625rem;
 }
 
 .card--title {
     color: var(--dark-blue);
     font-weight: bold;
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .card--subtitle {
     color: var(--gray-blue);
     font-size: var(--font-size);
     text-align: center;
-    letter-spacing: 1.5px;
+    letter-spacing: .0938rem;
 }
 
 /* Attribution */
 .attribution {
-    margin-top: 15px;
-    font-size: 11px;
+    margin-top: .9375rem;
+    font-size: .6875rem;
     text-align: center;
 }
 
